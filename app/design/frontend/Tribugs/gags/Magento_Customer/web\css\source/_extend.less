@@ -1,0 +1,822 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+//
+//  Common
+//  _____________________________________________
+
+
+& when (@media-common = true) {
+   p.note{
+    color: #626060;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 500;
+   }
+   fieldset.fieldset.otpverification {
+    margin: 0;
+        h3{
+            margin-top: 0;
+        }
+   }    
+   aside.modal-popup.signinpopup {
+        .modal-header{
+            border-bottom: 0;
+            margin: 0;
+            height: 0;
+        }
+
+    }
+    .signinpopup{
+        .action-close{
+            display: none;
+        }
+    }
+    .siginpop-content{
+        
+        input.input-text[type='number'],
+        input.input-text[type='text'],
+        input.input-text[type='email']{
+            height: 38px;
+            border-radius: 0;
+            background: transparent;
+            border: 0;
+            border-bottom: 2px solid #ebba22;
+            padding-left: 5px;
+        }
+    } 
+    .customer-account-login{
+        .header.content{
+            padding-bottom: 0;
+        }
+        .page-header{
+            border: 0;
+            background-color: #f1f5f9;
+            margin-bottom: 0;
+            .signinbtn{
+                display: none !important;
+            }
+            .logo{
+                float: none;
+                margin: 0 auto;
+            }
+        }
+        .page-main{
+            background-color: #f1f5f9; 
+            padding: 0;
+           .page-title-wrapper{
+                display: block;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                .page-title{
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #333;
+                }
+           }
+        }
+        
+    }
+
+    .login-container{
+        padding: 0;
+        position: relative;
+        .fieldset {
+            &:after {
+                margin-top: 10px;
+            }
+        }
+        .edit-container{
+           width:200px;
+           .edit-option-wrapper{
+             .name,
+             .lastname{
+                margin-bottom: 10px;
+             }
+           }
+        }
+    }
+    .otpverification-container{
+        .number{
+            .country-code{
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                font-weight: 600;
+            }
+            #phonenumber{
+                padding: 0 20px 0 35px;
+                border-radius: 0;
+                background: transparent;
+                border: 0;
+                border-bottom: 2px solid #ebba22;
+            }
+            #otp{
+                padding-left: 0;
+                border-radius: 0;
+                background: transparent;
+                border: 0;
+                border-bottom: 2px solid #ebba22;
+            }
+            .control{
+                position: relative;
+            }
+        }
+
+        .otpverification{
+            .message.error {
+                margin: 0 auto;
+                padding: 5px 20px;
+                 background: none;
+                
+            }
+            .number{
+                margin-bottom: 10px;
+            }
+        }
+        .otpconfirmation{
+            h3{
+                font-size: 14px;
+                margin-bottom: 0;
+                margin-top: 5px;
+            }
+        }
+    }
+    div#otp-error {
+        padding: 5px 15px;
+        margin-top: 5px;
+    }
+    a.code-link{
+        margin: 5px 0;
+        display: inline-block;
+    }
+    .verifyBtn-wrapper,.otpverification .actions-toolbar{
+        text-align: center;
+        .verify-btn,
+        .send-otp.action{
+            min-width: 200px;
+            margin: 0 auto;
+            float: none !important;
+        }
+    }
+    .term-condition {
+        padding: 0;
+        margin-bottom: 18px;
+        font-size: 10px;
+        font-weight: 500;
+        a{
+            text-decoration: underline;
+        }
+        input[type="checkbox"] {
+            margin: 0px 2px 0 4px;
+            top: 1px;
+        }    
+    } 
+    .warning-container {
+        .items {
+            font-size: 11px !important;
+        }
+        h3{
+            margin-top: 0;
+        }
+        .warning-wrapper {
+            p {
+                margin-bottom: 10px;
+            }
+            .items {
+                display: flex;
+                margin-bottom: 8px;
+                .content {
+                    text-align: left;
+                    p {
+                        opacity: 0.8;
+                    }
+                    .heading {
+                        margin: 0;
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+            .icon {
+                border-radius: 50%;
+                padding: 10px;
+                background: #F5D31A;
+                margin-right: 15px;
+                height: 37px;
+                img {
+                    width: 35px;
+                    height: auto;
+                    max-width: none;
+                }
+            }
+        }
+        .actions-toolbar {
+            .primary{
+                float: none;
+            }
+        }
+        &.general-popup-container {
+            max-height: 90%;
+            height: 100%;
+            h3{
+                font-size: 2rem;
+                padding: 0 0 5px;
+            }
+        }        
+    }
+
+    //payment-method CSS
+    .paymentoption-wrapper-container {
+        .payment-title {
+            h3{
+                margin-top: 5px;
+            }
+        }
+        ul {
+           
+            padding: 0;
+            list-style: none;
+            &.items {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                .item{
+                    cursor: pointer;
+                    &:before{
+                        content: '';
+                        width: 12px;
+                        height: 12px;
+                        display: inline-block;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                        border: 1px solid #ccc;
+                    }
+                    &.current {
+                        background-color: #fff;
+                        font-weight: 600;
+                        &:before{
+                            content: '';
+                            width: 12px;
+                            height: 12px;
+                            display: inline-block;
+                            background: #F5D31A;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            border: 1px solid #F5D31A;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+        }  
+    }
+    .box-content{
+        address{
+            text-transform: capitalize;
+        }
+    }
+    .account{
+        .column.main{
+            .block:not(.widget){
+                .block-title{
+                    >strong{
+                     font-size:18px;
+                    }
+                }
+            }
+        }
+        &.customer-address-index,
+        &.customer-address-form{
+            .page-title-wrapper{
+                .page-title{
+                    margin-bottom: 8px;
+                    &:before{
+                        content: '\f060';
+                        font-family: 'FontAwesome';
+                        margin-right: 5px;
+                        font-weight: 700;
+                        font-size: 14px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .table-wrapper {
+                border-top: none;
+            }    
+        }
+        input[type="tel"],
+        select{
+            height: 38px;
+            border-radius: 25px;
+            padding-left: 20px;
+        }
+        .page-main {
+           .page-title-wrapper{
+               .page-title {
+                   font-size: 22px;
+               }    
+            }
+        }  
+        .block{
+            &.block-dashboard-info{
+                margin-bottom: 25px;
+               .block-title{
+                display: none;
+               }
+               .box-actions{
+                    .action{
+                        &:after {
+                            border-left: none;
+                        } 
+                       &.change-password{
+                        display: none;
+                       }
+                    }   
+               } 
+            }
+            &.block-dashboard-orders {
+                display: none;
+            }
+            &.block-addresses-default,
+            &.block-dashboard-addresses {
+                .box-address-billing,
+                .box-address-shipping,
+                .box-billing-address,
+                .box-shipping-address{
+                    border: 1px solid;
+                    border: 1px solid rgb(231, 232, 235);
+                    padding: 10px 15px;
+                    border-radius: 8px;
+                }
+            }
+            &.block-addresses-list{
+               margin-bottom: 25px;
+            }
+        }  
+    }
+    .customer-account-login{
+        .login-container{
+            .signinbtn {
+                display: none;
+            }
+        }
+        .page-footer,
+        .copyright{
+          display:none;
+        }
+        
+
+    }
+   
+    .header{
+        .customer-profile-container{
+            float: right;
+            padding-top:8px;
+            display: flex;
+            align-items: center;
+            .profile-customer-name {
+                font-size: 15px;
+                font-weight: 600;
+                color:#333 !important;
+                text-transform: capitalize;
+            }
+            .logsigninbtn {
+                padding: 0 0 0 8px;
+                border: 0;
+                width: auto;
+                background: #fff;
+                margin-top: 0;
+                font-size: 0;
+                &:hover{
+                    padding: 0 0 0 8px;
+                    border: 0;
+                    background: #fff;
+                }
+                .profile-links{
+                    &::before{
+                        width: 16px;
+                        height: 16px;
+                        display: block;
+                        content: "\f011";
+                        font-family: FontAwesome;
+                        font-size: 18px;
+                        font-weight: normal;
+                        position: relative;
+                        top: -4px;
+                    }
+                }
+                   
+            }
+        }
+
+        .logout-popup-wrapper {
+            background: #fff;
+            z-index: 99;
+            padding: 20px;
+            width: auto;
+            border-radius: 15px 15px 0px 0px;
+            max-width: 100%;
+            position: fixed;
+            
+            .warrning-mgs-text {
+                margin: 10px 0;
+                p {
+                    font-size: 16px;
+                }
+            }
+            .primary{
+                display: flex;
+                .logout-cancel{
+                    margin-bottom: 0;
+                    margin-right: 5px;
+                    justify-content: center;
+                }
+                .logout-confirm{
+                    background: #fff;
+                    padding: 10px;
+                    border: 1px solid #000;
+                    margin-left: 5px;                  
+                } 
+            }            
+        }
+    }
+    .address-wrapper {
+        display: flex;
+        padding-bottom: 25px;
+        flex-wrap: wrap;
+    }
+    .address-item {
+        padding: 15px 10px;
+        border: 1px solid #ccc;
+        width: 100%;
+        display: flex;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        &.actions-toolbar{
+            border: 2px dashed rgb(231, 232, 235);
+            justify-content: center;
+            align-items: center;
+            padding:10px;
+            button.action.primary.add{
+                background: #fff;
+                border: 0;
+                color: #333;
+                font-weight: 500;
+                &:before{
+                    content: '';
+                    display: inline-block;
+                    width: 30px;
+                    height: 26px;
+                    background: url(../images/building.JPG) no-repeat 0 0;
+                    background-size: contain;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .address-details{
+        display: flex;
+        .name{
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+        }
+        span.address-text{
+            font-size: 13px;
+            color: rgb(111, 117, 136);
+            font-weight: 500;
+            display: inline-block;
+            text-transform: capitalize;
+        }
+        img.location-img {
+            max-width: 28px;
+            margin-right: 5px;
+        }
+    }
+    .address-actions {
+        display: flex;
+        .action{
+            padding: 0 3px;
+            font-size: 0;
+            &.edit:before {
+                content: '\e601';
+                font-family: 'luma-icons';
+                font-size: 17px;
+            }
+            &.delete:before {
+                content: '\e604';
+                font-family: 'luma-icons';
+                font-size: 17px;
+            }
+        }
+    }
+    .form-address-edit{
+        >.fieldset{
+            width: 100% !important;
+            float: none !important;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .field{
+                width: 48%;
+                &.choice,
+                &.additional{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    //customer-addresses-toolbar css
+    .customer-addresses-toolbar{
+        .pager{
+            display: flex;
+            justify-content: space-between;
+            .toolbar-amount{
+                .toolbar-number{
+                    color: #333;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .limiter{                
+                .limiter-label{
+                    display: none;
+                }
+                .limiter-options{
+                    border-radius: 5px;
+                    background-color: #fff;
+                    .limiter-text{
+                        font-size: 16px;
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+    .action-secondary.action-dismiss {
+        margin-bottom: 10px;
+    }
+    .action-primary.action-accept {
+        background: #F5D31A;
+        border: 1px solid #f5d31a;
+        color: #333;
+    }
+    .tribugs_bookservice-customerprofile-index{	
+        #account-info-form{
+            margin-bottom:20px;
+           .name,
+           .phone{
+                margin-bottom: 16px;
+                #fname,
+                #email{
+                    margin-top: 10px;
+                }
+                
+                
+            }
+        }
+    }
+    .block.block-addresses-default {
+        margin-bottom: 25px;
+    }
+}
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+   .nav-sections-item-title{
+      width:50%;
+      height: 40px;
+      padding-top: 8px;
+   }
+   .otpverification-container{
+      max-width: 210px;
+   }
+   .siginpop-content {
+    padding: 15px 0; 
+     position: absolute;
+     bottom: 0; 
+     left: 15px; 
+  }
+  .login-desktop-banner{
+    display: none !important;
+  }
+    
+   .account{
+       .page-main {
+         margin: 0;
+         padding-top: 20px;
+         padding-bottom: 20px;
+        .form-address-edit{
+            .actions-toolbar{
+                .action.primary{
+                    line-height: 12px;
+                    padding:12px 10px;
+                }
+            }
+        }
+       
+    }
+    .legend>span{
+        font-size:18px;
+    }
+    
+   }
+    .header{
+        .logout-popup-wrapper {
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .primary{
+            .logout-cancel,
+            .logout-confirm{
+                min-width: 50% !important;
+                justify-content: center;
+            }
+        } 
+    }   
+}
+@media (max-width: 360px) {
+    .otpverification{
+        .term-condition{
+            font-size: 10px;
+        }
+    }
+    
+}
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .login-container{
+        text-align: center;
+        .fieldset{
+            >.field{
+                >.control{
+                    width: 85%;
+                }    
+            }
+        }
+        #otp {
+            width: 85%;
+        }
+        .edit-container {
+            width: 100%;
+            text-align: left;
+            .actions-toolbar{
+                text-align: left;
+            }
+        }
+
+    }
+    .warning-container{
+        &.general-popup-container {
+            height: 100%;
+            min-height: 63%;
+        }
+    }
+
+    .customer-account-login{
+        .page-main {
+           background: #fff;
+           padding: 20px;
+           margin:0 auto 25px;
+        }
+        .login-img{
+            display: none;
+        }
+        .login-wrapper-desktop {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            .siginpop-content {
+                width: 30%;
+                padding: 10px 20px 21px;
+                
+                .otpverification{
+                    .actions-toolbar {
+                        text-align: left;
+                    }
+                }
+                .verifyBtn-wrapper{
+                    .verify-btn {
+                        margin: 10px 0;
+                    }
+                }
+            }
+            .login-desktop-banner{
+                width: 65%;
+                display: block;
+                padding-top: 50px;
+                .logindesktop-img{
+                    height: 460px;
+                }
+            }
+            
+        }
+
+    } 
+    
+    .account{
+        &.page-layout-2columns-left{
+            .column.main {
+                width: 100%;
+                .block:not(.widget){
+                    .block-content{
+                        .box{
+                            width:45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .otpverification-container{
+        // max-width: 210px;
+        text-align: left;
+        .actions-toolbar{
+            text-align: left;
+        }
+     }
+    .header{
+        .customer-profile-container{
+            margin-top: 8px;
+            padding-top:10px;
+            padding-left: 7px;
+            .profile-customer-name {
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+            .logsigninbtn {
+                .profile-links{
+                    &::before{
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+                   
+            }
+        }  
+    }
+    .address-item {
+        width: ~'calc(33.33% - 20px)';
+        margin: 0 10px 20px;
+    }
+
+    .header{
+        .logout-popup-wrapper {
+            top: 50%;
+            left: 53%;
+            border-radius: 5px;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    }
+    .tribugs_bookservice-customerprofile-index{
+        .general-popup-container {
+            max-height: 275px;
+        }
+    } 
+}
+@media (min-width:1181px) and  (max-width:1500px){
+    .warning-container{
+        &.general-popup-container {
+            max-height: 70%;
+        }
+    }
+
+}
+@media (min-width:1501px){
+    .warning-container{
+        &.general-popup-container {
+            max-height: 63%;
+        }
+    }
+
+}
+@media  (min-width:769px) and (max-width:1180px) {
+    .warning-container{
+        &.general-popup-container {
+            max-height: 80%;
+        }
+    }
+}
+
