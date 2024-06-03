@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page>
+    <body>
+        <referenceBlock name="address_grid">
+            <arguments>
+		        <argument name="view_model" xsi:type="object">Tribugs\BookService\ViewModel\Customer</argument>
+		    </arguments>
+        </referenceBlock>
+    </body>
+</page>
